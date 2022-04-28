@@ -9,4 +9,5 @@ class ObjectDetector(Detector):
         self.listener = listener
 
     def _detect(self):
-        yolov5.detect.run(source=0, listener=self.listener)
+        yolo = yolov5.detect.Yolo()
+        yolo.run(source=0, listener=self.listener)
