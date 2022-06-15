@@ -1,21 +1,6 @@
-import abc
-import threading
-from abc import ABC
-from typing import List
-
 import cv2
 
 from Bob.visual.monitor.framework.fw_monitor import VideoMonitor
-
-
-class CameraListener(ABC):
-    @abc.abstractmethod
-    def onImageRead(self, image):
-        pass
-
-    @abc.abstractmethod
-    def onDetect(self, _id, image, data):
-        pass
 
 
 class CameraMonitor(VideoMonitor):
