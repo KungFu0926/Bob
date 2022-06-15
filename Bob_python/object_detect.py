@@ -1,7 +1,8 @@
 import cv2
 
-from Bob.visual.monitor.concrete.crt_camera import CameraListener, CameraMonitor
+from Bob.visual.monitor.concrete.crt_camera import CameraMonitor
 from Bob.visual.detector.concrete.object_detect_yolov5 import ObjectDetector
+from Bob.visual.monitor.framework.fw_monitor import CameraListener
 from Bob.visual.utils import visual_utils
 
 
